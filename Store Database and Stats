@@ -1,0 +1,18 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item_name TEXT, aisle INTEGER, price INTEGER, category TEXT);
+INSERT INTO store VALUES (1, "shirt", 3, 14.99, "women");
+INSERT INTO store VALUES (2, "pants", 4, 25.99, "women");
+INSERT INTO store VALUES (3, "sweater", 3, 35.99, "women");
+INSERT INTO store VALUES (4, "skirt", 4, 19.99, "women");
+INSERT INTO store VALUES (5, "shirt", 5, 14.99, "men");
+INSERT INTO store VALUES (6, "pants", 6, 25.99, "men");
+INSERT INTO store VALUES (7, "sweater", 5, 36.99, "men"); 
+INSERT INTO store VALUES (8, "shoes", 10, 59.99, "women");
+INSERT INTO store VALUES (9, "shoes", 11, 59.99, "men");
+INSERT INTO store VALUES (10, "onesie", 15, 10.99, "babies");
+INSERT INTO store VALUES (11, "sweatshirt", 16, 10.99, "children"); 
+INSERT INTO store VALUES (12, "joggers", 4, 15.99, "women"); 
+INSERT INTO store VALUES (13, "gym shorts", 6, 10.99, "men");
+INSERT INTO store VALUES (14, "nightgown", 1, 10.99, "women"); 
+INSERT INTO store VALUES (15, "pajamas", 7, 15.99, "men"); 
+SELECT * FROM store ORDER BY price ASC;
+SELECT MAX(price) FROM store;
